@@ -1,1 +1,41 @@
-<h1>HELLO WORLD</h1>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Code IDE by Dimas Adiyaksa</title>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "framework/bootstrap.min.css">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    
+    <body>
+        
+        <header>
+            <div id = "nav">
+                <h5>Code IDE</h5>
+                <button onclick="preview()" class = "btn btn-primary btn-sm" id = "preButton">Preview</button>
+            </div>
+        </header>
+        
+        <div id = "switcher">
+            <button onclick = "toHTML()" class = "btn btn-link btn-sm"><span id = "toHTML">HTML</span></button>
+            <button onclick = "toCSS()" class = "btn btn-link btn-sm"><span id = "toCSS">CSS</span></button>
+            <button onclick = "toJS()" class = "btn btn-link btn-sm"><span id = "toJS">Javascript</span></button>
+        </div>
+        
+        <div id = "editorHTML"></div>
+        <div id = "editorCSS"></div>
+        <div id = "editorJS"></div>
+        
+        <div id = "result">
+            <h4>Result</h4>
+            <iframe id = "result_page" frameborder = "0"></iframe>
+        </div>
+        
+        <script type="text/javascript" src = "framework/jQuery.js"></script>
+        <script type="text/javascript" src="framework/bootstrap.min.js"></script>
+        <script type="text/javascript" src = "ace/ace.js"></script>
+        <script type = "text/javascript" src = "ace/ext-language_tools.js"></script>
+        <script type="text/javascript" src = "script.js"></script>
+    </body>
+</html>
